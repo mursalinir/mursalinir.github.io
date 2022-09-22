@@ -134,11 +134,10 @@ hr {
 .history-tl-container ul.tl li {
   list-style: none;
   margin: auto;
-  margin-left: 200px;
+  margin-left: 100px;
   min-height: 50px;
-  /*background: rgba(255,255,0,0.1);*/
   border-left: 1px dashed #86d6ff;
-  padding: 0 0 50px 30px;
+  padding: 0 0 30px 30px;
   position: relative;
 }
 .history-tl-container ul.tl li:last-child {
@@ -146,14 +145,14 @@ hr {
 }
 .history-tl-container ul.tl li::before {
   position: absolute;
-  left: -18px;
+  left: -13px;
   top: -5px;
   content: " ";
   border: 8px solid rgba(255, 255, 255, 0.74);
   border-radius: 500%;
   background: #258cc7;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   transition: all 500ms ease-in-out;
 }
 .history-tl-container ul.tl li:hover::before {
