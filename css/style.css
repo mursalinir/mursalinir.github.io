@@ -310,7 +310,7 @@ hr {
 /* Start youtube*/
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 75%;
 }
 
 .video-container iframe {
