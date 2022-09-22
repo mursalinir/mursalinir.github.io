@@ -1,8 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   background: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -177,7 +172,6 @@ ul.tl li .timestamp {
   text-align: right;
   font-size: 12px;
 }
-
 /* END timeline */
 
 /* Start youtube*/
@@ -193,7 +187,6 @@ ul.tl li .timestamp {
   width: 100%;
   height: 100%;
 }
-
 /* END Yutube */
 
 /* START WORK */
