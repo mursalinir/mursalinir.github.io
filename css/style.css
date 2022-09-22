@@ -161,15 +161,15 @@ hr {
 }
 ul.tl li .item-detail {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 12px;
+  font-size: 15px;
 }
 ul.tl li .timestamp {
   color: #8d8d8d;
   position: absolute;
-  width: 100px;
+  width: 108px;
   left: -50%;
   text-align: right;
-  font-size: 12px;
+  font-size: 15px;
 }
 /* END timeline */
 
