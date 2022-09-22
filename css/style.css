@@ -124,7 +124,6 @@ hr {
 /* END HOME */
 
 /* START Lifeline */
-
 .history-tl-container {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -142,7 +141,7 @@ hr {
   margin: auto;
   margin-left: 200px;
   min-height: 50px;
-  /*background: rgba(255,255,0,0.1);*/
+  background: rgba(255,255,0,0.1);
   border-left: 1px dashed #86d6ff;
   padding: 0 0 50px 30px;
   position: relative;
@@ -165,8 +164,6 @@ hr {
 .history-tl-container ul.tl li:hover::before {
   border-color: #258cc7;
   transition: all 1000ms ease-in-out;
-}
-ul.tl li .item-title {
 }
 ul.tl li .item-detail {
   color: rgba(0, 0, 0, 0.5);
