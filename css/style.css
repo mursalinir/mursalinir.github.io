@@ -425,7 +425,7 @@ ul.tl li .timestamp {
 .github { background: #55acee; }
 .mail { background: #cc2127; }
 .media {
-  padding: 80px 40px 80px 40px;
+  padding: 40px 40px 40px 40px;
   -webkit-transition: all 0.6s ease-in;
           transition: all 0.6s ease-in;
 }
