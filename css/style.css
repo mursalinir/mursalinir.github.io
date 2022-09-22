@@ -425,7 +425,7 @@ ul.tl li .timestamp {
 .github { background: #55acee; }
 .mail { background: #cc2127; }
 .media {
-  padding: 40px 40px 40px 40px;
+  padding: 30px 40px 30px 40px;
   -webkit-transition: all 0.6s ease-in;
           transition: all 0.6s ease-in;
 }
@@ -450,16 +450,6 @@ ul.tl li .timestamp {
   font-weight: bold;
 }
 /* END SOCIAL */
-
-/* START CONTACT */
-.tm-contact {
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-input { height: 50px; }
-.tm-contact p { padding-top: 40px; }
-/* END CONTACT */
 
 @media screen and (max-device-width: 1024px){
   .templatemo-home {
