@@ -417,13 +417,13 @@ ul.tl li .timestamp {
   margin: 0;
 }
 .facebook:hover,
-.twitter:hover,
-.pinterest:hover {
+.github:hover,
+.mail:hover {
   background: #202020;
 }
 .facebook { background: #3b5998; }
-.twitter { background: #55acee; }
-.pinterest { background: #cc2127; }
+.github { background: #55acee; }
+.mail { background: #cc2127; }
 .media {
   padding: 80px 40px 80px 40px;
   -webkit-transition: all 0.6s ease-in;
