@@ -75,30 +75,32 @@
 				<h2 class="title">My <strong>Lifeline</strong></h2>
 			</div>
 		</div>
-		<div id="content">
-			<h1>Timeline Concept</h1>
-		  
-			<ul class="timeline">
-			  <li class="event" data-date="12:30 - 1:00pm">
-				<h3>Registration</h3>
-				<p>Get here on time, it's first come first serve. Be late, get turned away.</p>
-				<p>Get here on time, it's first come first serve. Be late, get turned away.</p>
-				<p>Get here on time, it's first come first serve. Be late, get turned away.</p>
-			  </li>
-			  <li class="event" data-date="2:30 - 4:00pm">
-				<h3>Opening Ceremony</h3>
-				<p>Get ready for an exciting event, this will kick off in amazing fashion with MOP & Busta Rhymes as an opening show.</p>
-			  </li>
-			  <li class="event" data-date="5:00 - 8:00pm">
-				<h3>Main Event</h3>
-				<p>This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>
-			  </li>
-			  <li class="event" data-date="8:30 - 9:30pm">
-				<h3>Closing Ceremony</h3>
-				<p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>
-			  </li>
+		<link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
+		<div class="history-tl-container">
+			<ul class="tl">
+				<li class="tl-item" ng-repeat="item in retailer_history">
+					<div class="timestamp">
+						3rd March 2015<br> 7:00 PM
+					</div>
+					<div class="item-title">Start from Shire</div>
+					<div class="item-detail">Don't forget the ring</div>
+				</li>
+				<li class="tl-item" ng-repeat="item in retailer_history">
+					<div class="timestamp">
+						19th March 2015<br> 3:00 PM
+					</div>
+					<div class="item-title">Kill some Orcs</div>
+					<div class="item-detail">Don't enter the caves!!</div>
+				</li>
+				<li class="tl-item" ng-repeat="item in retailer_history">
+					<div class="timestamp">
+						1st June 2015<br> 7:00 PM
+					</div>
+					<div class="item-title">Throw that goddamn ring in the lava</div>
+					<div class="item-detail">Also, throw that Gollum too</div>
+				</li>
 			</ul>
-		  </div>	
+		</div>
 	</section>
 
 	<!-- START work -->
@@ -297,7 +299,7 @@
 					<div class="progress tm-progress">
 						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="35"
 							aria-valuemin="0" aria-valuemax="100" style="width: 35%;"></div>
-					</div>					
+					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<h1>Web Skills</h1>
@@ -330,7 +332,7 @@
 					<div class="progress tm-progress">
 						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10"
 							aria-valuemin="0" aria-valuemax="50" style="width: 10%;"></div>
-					</div>					
+					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<h1>Others Skills</h1>
@@ -354,18 +356,15 @@
 						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30"
 							aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
 					</div>
-				</div>				
+				</div>
 			</div>
 			<div class="video-container">
 				<h2><strong>自己紹介ビデオ</strong></h2>
-				<iframe
-				  src="https://www.youtube.com/embed/bJ13QynWyho"
-				  frameborder="0"
-				  allow="accelerometer; autoplay; encrypted-media; gyroscope;"
-				  allowfullscreen>
+				<iframe src="https://www.youtube.com/embed/bJ13QynWyho" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen>
 				</iframe>
-			</div>			  
-		</div>		
+			</div>
+		</div>
 	</section>
 	<!-- END SKILLS -->
 
