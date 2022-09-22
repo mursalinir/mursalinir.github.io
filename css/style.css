@@ -418,7 +418,7 @@ ul.tl li .timestamp {
 .github { background: #55acee; }
 .mail { background: #cc2127; }
 .media {
-  padding: 25px 25px 25px 25px;
+  padding: 10px 10px 10px 10px;
   -webkit-transition: all 0.6s ease-in;
           transition: all 0.6s ease-in;
 }
@@ -441,6 +441,7 @@ ul.tl li .timestamp {
 .tm-social-title {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  font-size: 30px;
 }
 /* END SOCIAL */
 
