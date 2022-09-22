@@ -124,10 +124,7 @@ hr {
 /* END HOME */
 
 /* START Lifeline */
-body {
-  line-height: 1.3em;
-  min-width: 920px;
-}
+
 .history-tl-container {
   font-family: "Roboto", sans-serif;
   width: 50%;
