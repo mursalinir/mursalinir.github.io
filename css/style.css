@@ -145,8 +145,8 @@ hr {
 }
 .history-tl-container ul.tl li::before {
   position: absolute;
-  left: -13px;
-  top: -5px;
+  left: -190px;
+  top: 5px;
   content: " ";
   border: 8px solid rgba(255, 255, 255, 0.74);
   border-radius: 500%;
@@ -166,8 +166,8 @@ ul.tl li .item-detail {
 ul.tl li .timestamp {
   color: #8d8d8d;
   position: absolute;
-  width: 108px;
-  left: -50%;
+  width: 75px;
+  left: -60%;
   text-align: right;
   font-size: 15px;
 }
