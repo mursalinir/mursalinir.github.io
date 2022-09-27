@@ -89,7 +89,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: #878797;
+  color: #ababce;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -121,12 +121,12 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 }
 
