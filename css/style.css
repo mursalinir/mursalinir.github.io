@@ -88,8 +88,21 @@ common
 html {
   scroll-behavior: smooth;
 }
+
+:root {
+  --bg-color: #191923;
+  --title-color: #fafafc;
+  --text-color: #a5a5cf;
+  --subtitle-color: #646466; 
+}
+
+.light-theme {
+  --bg-color: #000000;
+  --title-color: #FFC107;
+  --text-color: #a5a5cf;
+}
 body {
-  color: #a5a5cf;
+  color: var(--text-color);
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -105,7 +118,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: #fafafc;
+  color: var(--title-color);
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
 }
@@ -140,7 +153,7 @@ h6 {
 }
 
 .art-white {
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 /* ----- container ----- */
@@ -158,14 +171,14 @@ h6 {
 /* ----- suptitle ----- */
 .art-el-suptitle {
   margin-top: 5px;
-  color: #646466;
+  color: var(--subtitle-color);
   font-style: italic;
   font-size: 11px;
 }
 
 /* ----- divider ----- */
 .art-ls-divider {
-  background: #646466;
+  background: var(--subtitle-color);
   width: 100%;
   height: 1px;
   opacity: 0.3;
@@ -186,7 +199,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 a:focus {
@@ -227,7 +240,7 @@ a:focus {
 .art-custom-list li {
   position: relative;
   list-style-type: none;
-  color: #fafafc;
+  color: var(--title-color);
   margin-bottom: 5px;
 }
 
@@ -265,16 +278,16 @@ link
 }
 
 .art-link:hover {
-  color: #fafafc;
+  color: var(--title-color);
   text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
 }
 
 .art-link.art-white-link {
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 .art-link.art-white-link:hover {
-  color: #fafafc;
+  color: var(--title-color);
   text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
   -webkit-transform: translateX(5px);
   transform: translateX(5px);
@@ -541,7 +554,7 @@ app marcup
 }
 
 .art-preloader-load path:first-child {
-  stroke: #191923;
+  stroke: var(--bg-color);
 }
 
 .art-preloader-load path:last-child {
@@ -563,7 +576,7 @@ app marcup
 /* ----- app ----- */
 .art-app {
   padding: 15px;
-  background: #191923;
+  background: var(--bg-color);
   width: 100vw;
   height: 100%;
   position: relative;
@@ -984,7 +997,7 @@ info bar
   font-weight: 700;
   font-size: 11px;
   line-height: 30px;
-  color: #fafafc;
+  color: var(--title-color);
   border-radius: 50%;
   opacity: 0;
   z-index: 1;
@@ -1028,7 +1041,7 @@ info bar
   position: absolute;
   bottom: -1px;
   right: 1px;
-  background: #fafafc;
+  background: var(--title-color);
   height: 23px;
   width: 23px;
   border-radius: 50%;
@@ -1090,7 +1103,7 @@ info bar
   color: #8c8c8e;
   -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
-  background: #191923;
+  background: var(--bg-color);
   opacity: 0;
   pointer-events: none;
   -webkit-transform: translateX(20px);
@@ -1108,7 +1121,7 @@ info bar
   right: -15px;
   top: 5px;
   opacity: 0;
-  background: #191923;
+  background: var(--bg-color);
   pointer-events: none;
   -webkit-transform: translateX(20px) rotate(45deg);
   transform: translateX(20px) rotate(45deg);
@@ -1149,13 +1162,13 @@ info bar
 }
 
 .art-info-bar .art-name {
-  color: #fafafc;
+  color: var(--title-color);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
 .art-info-bar .art-name a {
-  color: #fafafc;
+  color: var(--title-color);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -1298,12 +1311,12 @@ info bar
 
 .art-info-bar .art-ls-social a:hover {
   text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 /* ----- progresbar color ----- */
 .art-line-progress path:first-child {
-  stroke: #191923;
+  stroke: var(--bg-color);
 }
 
 .art-line-progress path:last-child {
@@ -1311,7 +1324,7 @@ info bar
 }
 
 .art-cirkle-progress path:first-child {
-  stroke: #191923;
+  stroke: var(--bg-color);
 }
 
 .art-cirkle-progress path:last-child {
@@ -1421,7 +1434,7 @@ menu bar
 }
 
 .art-menu-bar nav .main-menu .menu-item a:hover {
-  color: #fafafc;
+  color: var(--title-color);
   text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
 }
 
@@ -1518,7 +1531,7 @@ menu bar
 }
 
 .art-menu-bar nav .main-menu .menu-item.current-menu-item a:first-child {
-  color: #fafafc;
+  color: var(--title-color);
   text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
 }
 
@@ -1528,7 +1541,7 @@ menu bar
 }
 
 .art-menu-bar nav .main-menu .menu-item.current-menu-item .sub-menu .menu-item a:hover {
-  color: #fafafc;
+  color: var(--title-color);
   text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
 }
 
@@ -1592,7 +1605,7 @@ menu bar
   width: 200px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
-  color: #fafafc;
+  color: var(--title-color);
   position: absolute;
   overflow: hidden;
   top: 200px;
@@ -1712,7 +1725,7 @@ content
 }
 
 .art-banner .art-banner-overlay .art-banner-title h1 {
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 .art-banner .art-banner-overlay .art-banner-photo {
@@ -1729,7 +1742,7 @@ content
 /* ----- typing code ----- */
 .art-code {
   font-family: "Courier Prime", monospace;
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 .art-code i {
@@ -1867,7 +1880,7 @@ content
   right: 5px;
   height: calc(100% - 10px);
   width: 5px;
-  background: #191923;
+  background: var(--bg-color);
 }
 
 .art-timeline .art-timeline-item {
@@ -1875,7 +1888,7 @@ content
 }
 
 .art-timeline .art-timeline-item .art-timeline-mark-light {
-  background: #fafafc;
+  background: var(--title-color);
   position: absolute;
   top: 4px;
   right: -4px;
@@ -1945,7 +1958,7 @@ content
 }
 
 .art-timeline .art-timeline-content .art-card-header .art-right-side .art-date {
-  color: #646466;
+  color: var(--subtitle-color);
   margin-left: auto;
   background: #20202a;
   padding: 5px 15px;
@@ -1962,7 +1975,7 @@ content
   width: 100%;
   background: linear-gradient(159deg, #252532 0%, #23232d 100%);
   border: none;
-  color: #fafafc;
+  color: var(--title-color);
   padding-left: 65px;
   padding-right: 15px;
   -webkit-box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);
@@ -1973,19 +1986,19 @@ content
 }
 
 ::-webkit-input-placeholder {
-  color: #646466;
+  color: var(--subtitle-color);
 }
 
 :-ms-input-placeholder {
-  color: #646466;
+  color: var(--subtitle-color);
 }
 
 ::-ms-input-placeholder {
-  color: #646466;
+  color: var(--subtitle-color);
 }
 
 ::placeholder {
-  color: #646466;
+  color: var(--subtitle-color);
 }
 
 .art-form-field textarea {
@@ -2064,7 +2077,7 @@ content
   -webkit-transform: scale(0);
   transform: scale(0);
   text-transform: uppercase;
-  color: #fafafc;
+  color: var(--title-color);
   background: #20202a;
   letter-spacing: 1.5px;
   font-weight: 600;
@@ -2116,7 +2129,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 /* ------------------------------
@@ -2131,7 +2144,7 @@ portfolio
 }
 
 .art-filter a.art-current {
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 /* ----- portfolio items ----- */
@@ -2169,7 +2182,7 @@ portfolio
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   border-radius: 50%;
   position: absolute;
-  color: #fafafc;
+  color: var(--title-color);
   top: 30px;
   left: 30px;
   background: linear-gradient(159deg, rgba(45, 45, 58, 0.88) 0%, rgba(43, 43, 53, 0.88) 100%);
@@ -2314,7 +2327,7 @@ portfolio
 }
 
 .art-project-category {
-  color: #646466;
+  color: var(--subtitle-color);
   margin-left: auto;
   display: inline;
   background: #20202a;
@@ -2367,7 +2380,7 @@ portfolio
 }
 
 .fancybox-toolbar .fancybox-button:hover {
-  color: #fafafc;
+  color: var(--title-color);
 }
 
 .fancybox-toolbar .fancybox-button svg {
@@ -2446,7 +2459,7 @@ content (after 1600px)
 ------------------------------ */
 @media (max-width: 1600px) {
   .art-banner .art-banner-overlay .art-banner-title h1 {
-    color: #fafafc;
+    color: var(--title-color);
     font-size: 42px;
   }
 
@@ -2466,7 +2479,7 @@ content (after 1400px)
   }
 
   .art-banner .art-banner-overlay .art-banner-title h1 {
-    color: #fafafc;
+    color: var(--title-color);
     font-size: 36px;
   }
 
@@ -2509,7 +2522,7 @@ content (after 920px)
   }
 
   .art-banner .art-banner-overlay .art-banner-title h1 {
-    color: #fafafc;
+    color: var(--title-color);
     font-size: 46px;
   }
 
@@ -2698,7 +2711,7 @@ burger button
 .art-menu-bar-btn:hover span,
 .art-menu-bar-btn:hover span:after,
 .art-menu-bar-btn:hover span:before {
-  background: #fafafc;
+  background: var(--title-color);
 }
 
 /* ------------------------------
