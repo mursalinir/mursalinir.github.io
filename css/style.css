@@ -1761,10 +1761,9 @@ content
   position: absolute;
   right: 30px;
   bottom: 0;  
-  transition: right 1s, transform 1s;
+  transition: transform 1s;
 }
-.art-banner .art-banner-overlay .art-banner-photo:hover {  
-  right: 40px;
+.art-banner .art-banner-overlay .art-banner-photo:hover {    
   transform: scale(1.1);
 }
 
