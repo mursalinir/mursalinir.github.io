@@ -454,11 +454,12 @@
                           <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build <span class="txt-rotate"
                               data-period="2000"
                               data-rotate='[ "web applications.", "android applications.", "IoT", "automation tools." ]'></span>&lt;/<i>code</i>&gt;
-                          </div> 
+                          </div>
                           <div class="art-buttons-frame">
                             <!-- button -->
-                            <a href="https://github.com/mursalinir" class="art-btn art-btn-md" target="_blank"><span style="font-size: 15px";><i class="fab fa-github"></i> GitHub</span></a>
-                          </div>                         
+                            <a href="https://github.com/mursalinir" class="art-btn art-btn-md" target="_blank"><span
+                                style="font-size: 15px" ;><i class="fab fa-github"></i> GitHub</span></a>
+                          </div>
                         </div>
                         <!-- main title end -->
                         <!-- photo -->
@@ -853,7 +854,8 @@
                           <div class="art-project-category">Ruby on Rails</div>
                           <div class="art-project-category">Bootstrap</div>
                         </div>
-                        <div class="mb-15">This is a Ruby on Rails Todo application. This project develop for learn Ruby on Rails. 
+                        <div class="mb-15">This is a Ruby on Rails Todo application. This project develop for learn Ruby
+                          on Rails.
                         </div>
                         <!-- button -->
                         <a href="todo.html" class="art-link art-color-link art-w-chevron" target="_blank">Read more</a>
@@ -884,10 +886,12 @@
                           <div class="art-project-category">CSS</div>
                           <div class="art-project-category">JavaScript</div>
                         </div>
-                        <div class="mb-15">This is my portfolio site. In this site I have used HTML, CSS, and JavaScript.
+                        <div class="mb-15">This is my portfolio site. In this site I have used HTML, CSS, and
+                          JavaScript.
                         </div>
                         <!-- button -->
-                        <a href="portfolio-site.html" class="art-link art-color-link art-w-chevron" target="_blank">Read more</a>
+                        <a href="portfolio-site.html" class="art-link art-color-link art-w-chevron" target="_blank">Read
+                          more</a>
                       </div>
                       <!-- description end -->
 
@@ -942,7 +946,7 @@
                         <h5 class="mb-15">Line Follower Robot</h5>
                         <div style="margin-bottom: 5px;">
                           <div class="art-project-category">C++</div>
-                          <div class="art-project-category">Arduino</div>                          
+                          <div class="art-project-category">Arduino</div>
                         </div>
                         <div class="mb-15">This is a microcontroller-based machine that can detect and follow the line
                           drawn on the floor with avoiding obstacles.</div>
@@ -1480,7 +1484,7 @@
                       <!-- contact form frame -->
                       <div class="art-a art-card">
                         <!-- contact form -->
-                        <form id="form" class="art-contact-form" action="/mail.php" method="post">
+                        <form id="form" class="art-contact-form" onsubmit="sendemail()">
                           <!-- form field -->
                           <div class="art-form-field">
                             <!-- name input -->
@@ -1640,6 +1644,23 @@
   <script src="js/main.js"></script>
   <!-- smooth scrolling js -->
   <script src="js/smoothscroll.js"></script>
+  <!-- SMTPJS Elastic email config for contact form-->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendemail() {
+      Email.send({
+        SecureToken : "595ef0e7-2e94-40a3-abd4-84ee82814702",
+        To: 'mursalinir@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "Message from potfolio contact form",
+        Body: "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Message: <br>" + document.getElementById("message").value
+      }).then(
+        message => alert("Mail sent successfully. Thank you for contact with me. I will reply you back as soon as possible.")
+      );
+    }
+  </script>
 
 </body>
 
